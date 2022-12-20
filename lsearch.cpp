@@ -11,8 +11,6 @@ Description: Find odd number and counting
 #include <time.h>
 #include <windows.h>
 
-#define N 1500
-
 //Function for Linear search
 void Oddsearch(int *v, int n, int *count) {
 	int i, j;
