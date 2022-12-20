@@ -175,6 +175,7 @@ int main(int argc, char** argv)
 		printf("Count Odd Number Program with MPI is Started\n");
 		printf("The number of processes: %d and data is : %d\n", np, size);
 		
+		/*Dekomposisi dan mapping*/
 		MPI_Scatter(arr, size_elems, MPI_INT, chunk, size_elems, MPI_INT, 0, MPI_COMM_WORLD);
 
 		times = -MPI_Wtime();
